@@ -1,7 +1,9 @@
+import Card from "./Card";
 
 export default function ProjectsSection() {
+
     return (
-        <>
+        <Card title={"Projects"}>
             <h3>Hack your future</h3>
             {"Who doesn't like games"}
 
@@ -13,6 +15,6 @@ export default function ProjectsSection() {
         
             <h3>Game jams</h3>
             {"Who doesn't like games"}
-        </>
+        </Card>
     );
 }

@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <h1>Bjørn Vinther</h1>
-      <h2>Software Engineer</h2>
+      <div class="subtitle">Software Engineer</div>
 
       <ContactInfoSection />
 

@@ -1,9 +1,13 @@
 
 .icon-label {
-  font-size: 16pt;
+  /* font-size: 16pt; */
   margin: 5px;
 }
 
 .icon-label span {
   margin-left: 0.5rem;
+}
+
+.icon-label i {
+  color: orange;
 }

@@ -1,11 +1,24 @@
 body {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
   /* background-color: blue; */
 }
 
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: orange;
+}
+
 h1 {
+  color: darkslateblue;
   font-size: 3rem;
   font-weight: 700;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: darkslateblue;
 }

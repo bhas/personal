@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     align-items: top;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-size: 12pt;
 }
 
@@ -12,12 +12,12 @@
   flex-direction: column;
   align-items: flex-end;
   margin-top: 5px;
-  flex: 0 170px;
+  flex: 0 160px;
 }
 
 .date-range-label {
   font-size: 12pt;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .date-range-elapsed {

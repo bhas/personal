@@ -4,7 +4,6 @@
     flex-direction: row;
     align-items: top;
     margin-bottom: 3px;
-    font-size: 12pt;
 }
 
 .date-range {
@@ -12,11 +11,11 @@
   flex-direction: column;
   align-items: flex-end;
   margin-top: 5px;
-  flex: 0 160px;
+  flex: 0 150px;
 }
 
 .date-range-label {
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: 600;
 }
 
@@ -28,7 +27,7 @@
 .time-line {
   flex: 0 40px;
   margin-right: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .history-entry-content {
@@ -45,9 +44,10 @@
 }
 
 .history-entry-header .title {
-  font-size: 19pt;
-  font-weight: 800;
+  font-size: 16pt;
+  font-weight: 700;
   margin-right: 10px;
+  margin-bottom: 2px;
 }
 
 .history-entry-header .company-link {

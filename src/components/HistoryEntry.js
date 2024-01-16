@@ -38,11 +38,10 @@ function TimeLine({type}) {
     const icon = type === "work" ? 
         process.env.PUBLIC_URL + "/briefcase-solid.svg" :
         process.env.PUBLIC_URL + "/graduation-cap-solid.svg";
-    const dotSize = 18;
+    const dotSize = 17;
     const iconSize = 18;
     const color = "#139";
     return <svg className="time-line">
-        {/* <rect x={5} y={5} width={dotSize*2} height={dotSize*2} rx={3} ry={3} transform="rotate(45, 21, 21)" fill={color}/> */}
         <circle cx={dotSize} cy={dotSize} r={dotSize} fill={color}/>
         <line x1={dotSize} y1={dotSize} x2={dotSize} y2="100%" stroke={color} stroke-width="2"/>
         <image xlinkHref={icon} x={dotSize-iconSize/2} y={dotSize-iconSize/2} height={iconSize} width={iconSize}></image>

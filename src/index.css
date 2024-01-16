@@ -37,5 +37,10 @@ h1 {
 }
 
 p {
-  margin-top: 5px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+p:last-child {
+  margin-bottom: 0px;
 }

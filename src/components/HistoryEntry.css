@@ -43,6 +43,11 @@
   align-items: center;
 }
 
+.history-entry-description {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
 .history-entry-header .title {
   font-size: 16pt;
   font-weight: 700;

@@ -13,16 +13,16 @@ export default function ProjectsSection() {
                 </p>
                 <p>
                     I have have always loved learning and teaching, and HackYourFuture is a great opportunity for me to do both while also helping people in need.
-                    Since I joined, I have taught students how to code in <span className="badge">Javascript</span>, <span className="badge">MySQL</span>, and <span className="badge">React</span> and provided them feedback and guidance on their projects.
+                    Since I joined, I have taught students how to code in <span className="badge">Javascript</span>, <span className="badge">SQL</span>, and <span className="badge">React</span> and provided them feedback and guidance on their projects.
                 </p>
             </Project>
 
+            <Project title={"This webpage"} subtitle={"Webpage"}>
+                todo
+            </Project>
+
             <Project title={"Game Jams"} subtitle={"Game Project"}>
-                <p>
-                In my thesis I wrote about Visualization of data on the construction site by using Mixed Reality (also known as Augmented Reality). 
-                We managed to develop an app where the user could use their phone to view a virtuel 3D model of a building while walking around inside the real building. 
-                In order to achieve a sufficient speed and accuracy on the phone, we had to optimize the way we stored and accessed data, as well as develop algorithms to compensate for the inaccuracies of the mobile phone’s sensors.
-                </p>
+                todo
             </Project>
 
             <Project title={"The Danish Redcross Youth"} subtitle={"Volunteering"}>

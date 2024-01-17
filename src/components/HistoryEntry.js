@@ -77,15 +77,17 @@ function formatTimeElapsed(startDate, endDate) {
     const differenceYears = Math.floor(totalMonths / 12);
     const differenceMonths = totalMonths % 12;
     
+    const monthText = `${differenceMonths} ${differenceMonths > 1 ? "months" : "month"}`;
+    const yearText = `${differenceYears} ${differenceYears > 1 ? "years" : "year"}`;
     if (differenceYears === 0) {
-        return `${differenceMonths} months`;
+        return monthText;
     }
     else {
         if (differenceMonths === 0) {
-            return `${Math.floor(differenceYears)} years`;
+            return yearText;
         } 
         else {
-            return `${Math.floor(differenceYears)} years and ${differenceMonths} months`;
+            return `${yearText} and ${monthText}`;
         }
     }
 }

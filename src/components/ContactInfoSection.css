@@ -1,0 +1,33 @@
+
+
+.contact-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact-info-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 32pt;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: gray;
+}
+
+.tmp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -27,9 +27,10 @@ export default function ExperienceSection() {
       >
         <p>
             Republica was the first place where I really got to stand on my own feet. 
-            In Dalux we had mostly worked with a monolithic architecture and tools developed inhouse.
-            In Republica the backend was developed as a microservice using <span className="badge">.NET Core</span> with <span className="badge">SQL Server</span> and we used <span className="badge">React</span> for the UI. 
-            All communication happened using RabbitMQ or Rest APIs.
+            Beforehand I had mostly worked with a monolithic architecture and tools developed inhouse in Dalux.
+            Republica was had implemented their APIs as microservices using <span className="badge">.NET Core</span> with <span className="badge">SQL Server</span> and all communication between the services was implemented using event queues or API calls.
+            For the UI we used <span className="badge">React</span>.
+            
             Everything was managed using <span className="badge">Azure DevOps</span> and deployed to local Linux servers.
         </p>
         <p>
@@ -37,15 +38,19 @@ export default function ExperienceSection() {
             I therefore took it upon myself to improve the code quality and stability of the system.
         </p>
         <p>
-             I was responsible for the following tasks:
+             In my time in the team I accomplished the following:
             <ul>
                 <li>
-                    Help optimize our service used for importing all our data into the system. 
+                    Refactored and optimized our service used for importing all our data into the system. 
                     Not only did it make the system much more stable but it also cut down the time it took to import data from 2 hours to less than 2 minutes.
+                    Most of the performance increase was achieved by optimizing the <span className="badge">SQL</span> queries and the data structures used in the service.
                 </li>
                 <li>
                     Implement a search service which enabled users quickly search through millions of data entries with complex queries. 
-                    The service was implemented using Apache Solr.
+                    The service was implemented using Apache Solr and <span className="badge">C#</span>.
+                </li>
+                <li>
+                    improved our supporting features such as CI/CD deployments and documentation in <span className="badge">Azure DevOps</span>, documentation, and logging via Graylog.
                 </li>
                 <li>
                     Help implement new features in our UI developed in <span className="badge">React</span>
@@ -66,17 +71,28 @@ export default function ExperienceSection() {
       >
         <p>
             I started my professional carreer at Dalux where I worked as a fullstack developer in a rapidly growing environment. 
-            Initially, I was mostly solving smaller tasks, but as leadership realised my talent I was given more responsibilities. 
-            Eventually moved on to design and implement core systems and guiding junior developers.
+            Initially, I was mostly solving smaller tasks, but as leadership realised my talent I was given more responsibilities and eventually moved on to design and implement core systems and guiding junior developers.
         </p>
         <p>
-            My accomplishments at Dalux include:
+            I was involved in many different projects and tasks, but the most notable ones were:
             <ul>
                 <li>
-                    I participated a major project to migrate our single page application of more than 1 million lines of code using <span className="badge">Angular</span> with <span className="badge">Typescript</span> and <span className="badge">CSS</span>.
+                    I participated a major project to migrate our single page application of more than 1 million lines of code. 
+                    I was responsible for converting several modules of our UI as well as creating core UI compoenents to be used all over the application. 
+                    The new UI was implemented using <span className="badge">Angular</span> with <span className="badge">Typescript</span> and <span className="badge">CSS</span>.
                 </li>
                 <li>
-                    I designed and implemented two integrations, one between our two major systems and one to an external system. Both were implemented using <span className="badge">C#</span> and <span className="badge">SQL</span>.
+                    I designed and implemented two integrations using <span className="badge">C#</span> and <span className="badge">SQL</span>:
+                    <ul>
+                        <li>
+                            One integration was used to transfer all data between our two main systems.
+                            The main challenge was to ensure the accuracy of the data transfer and handle any inconsistencies or discrepancies between the systems.
+                        </li>
+                        <li>
+                            The other integration was to the external APIs of <a href="https://en.energinet.dk/" target="_blank">EnergyNet</a> where we daily imported thousands of energy readings.
+                            Furthermore, I developed the system used for analyzing the readings and visualize them using <a href="https://observablehq.com/@d3/gallery?utm_source=d3js-org&utm_medium=nav&utm_campaign=try-observable" target="_blank">D3.js</a>.
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     I performed customer support and attended workshops with customers to understand their needs and challenges.
@@ -100,7 +116,7 @@ export default function ExperienceSection() {
       >
         <p>
             For my master I studied digital media technologies with a focus on game development and 3D graphics. 
-            Here I learned how to develop games and apps using <span className="badge">Unity</span> and <span className="badge">C#</span> focusing on the games kdevelopment and graphics.
+            Here I learned how to develop games and apps using <span className="badge">Unity</span> and <span className="badge">C#</span>.
         </p>
         <p>
             I got an A for my thesis where I developed new ways of visualizing the digital 3D models on the construction site using Mixed Reality. 

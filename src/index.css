@@ -14,20 +14,6 @@ body {
   margin: auto;
 }
 
-.subtitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  color: orange;
-}
-
-h1 {
-  color: darkslateblue;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
 .badge {
   background-color: rgb(65, 86, 144);
   color: white;

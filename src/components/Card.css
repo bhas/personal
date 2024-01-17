@@ -2,7 +2,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: stretch;
+  justify-content: stretch;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -15,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  justify-items: stretch;
   flex: 1;
 }
 

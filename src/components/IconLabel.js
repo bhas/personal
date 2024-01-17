@@ -1,10 +1,10 @@
 import './IconLabel.css';
 
-export default function IconLabel({iconClass, label}) {
+export default function IconLabel({iconClass, label, url}) {
   return (
-    <div className="icon-label">
+    <a className="icon-label" href={url} target="_blank">
       <i className={iconClass}></i>
       <span>{label}</span>
-    </div>
+    </a>
   )
 }

@@ -1,13 +1,24 @@
 
 .icon-label {
-  /* font-size: 16pt; */
-  margin: 5px;
+  color: #222;
+  font-size: 12pt;
+  /* margin-top: 15px; */
+  /* padding: 5px 10px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 3px;
 }
+/* 
+.icon-label:hover {
+  background-color: #ddd;
+} */
 
 .icon-label span {
   margin-left: 0.5rem;
 }
 
 .icon-label i {
-  color: orange;
+  font-size: 16pt;
 }

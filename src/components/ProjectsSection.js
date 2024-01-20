@@ -18,11 +18,27 @@ export default function ProjectsSection() {
             </Project>
 
             <Project title={"This webpage"} subtitle={"Webpage"}>
-                todo
+                <p>
+                    This webpage was a fun little project I did to improve my <span className="badge">React</span> skills and showcase the quality of my work.
+                    I have challenged myself to learn how to use <span className="badge">AWS</span> and <span className="badge">GitHub Actions</span> to host the webpage on a custom domain and automatically deploy new versions of the webpage when I push new code to GitHub.
+                </p>
             </Project>
 
             <Project title={"Game Jams"} subtitle={"Game Project"}>
-                todo
+                <p>
+                    A game jam is an event where you have to make a game in a short amount of time, usually over a weekend. 
+                    It really forces you to keep focus and prioritize you work according to your skill level and limited time available.
+                    It is also common that you with people of different skill sets and backgrounds, which teaches you how to work in teams and how to communicate with people of different backgrounds.
+                </p>
+                <p>
+                    Since my student days I have participated in several game jams, including <a href="https://nordicgamejam.com/" target="_blank">Nordic Game Jam</a> and <a href="https://levelonejam.com/" target="_blank">Level One Jam</a>. 
+                    Most recently I participated with my friend in Jan 2023 Game Jam where we developed a small game in <span className="badge">Unity</span> where the player is trying to navigate a teddy bear through a world with various challenges.
+                </p>
+                <p>
+                    I normally do mostly coding but this time I decided to challenge myself by taking on the role of the creative artist and focus more on the visual aspects of the game such as 3D modelling, animations, and tieing it all together with the game code.                 
+                </p>
+                {/* https://itch.io/jam/nordic-game-jam-2023/rate/2018091 */}
+                
             </Project>
 
             <Project title={"The Danish Redcross Youth"} subtitle={"Volunteering"}>

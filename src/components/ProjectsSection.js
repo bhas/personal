@@ -1,4 +1,5 @@
 import Card from "./Card";
+import IconLabel from "./IconLabel";
 import Image from "./Image";
 import Project from "./Project";
 import "./ProjectsSection.css";
@@ -18,9 +19,23 @@ export default function ProjectsSection() {
             </Project>
 
             <Project title={"This webpage"} subtitle={"Webpage"}>
+                <IconLabel iconClass="fa-brands fa-github" label="github.com/bhas" url="https://github.com/bhas"/>
                 <p>
-                    This webpage was a fun little project I did to improve my <span className="badge">React</span> skills and showcase the quality of my work.
+                    This webpage was a fun little project I did to improve my <span className="badge">React</span> skills and showcase some of what I can do.
                     I have challenged myself to learn how to use <span className="badge">AWS</span> and <span className="badge">GitHub Actions</span> to host the webpage on a custom domain and automatically deploy new versions of the webpage when I push new code to GitHub.
+                </p>
+                <p>
+                    I am planning to continusly work on this webpage and add more features such as:
+                    <ul>
+                        <li>Translation to Danish version</li>
+                        <li>Dynamically generated resume as a downloadable pdf</li>
+                        <li>Easy search for keywords</li>
+                        <li>sub pages for future projects</li>
+                        <li>Adding improved styling and animations</li>
+                        <li>Make the website mobile friendly</li>
+                    </ul>
+
+                    If you have any good ideas please let me know. 😊
                 </p>
             </Project>
 

@@ -12,10 +12,61 @@ export default function ExperienceSection() {
         endDate={null}
         type={"work"}
       >
-        <p>Maersk’s ambitions are clear and bold - implement a world class platform for supply chain management. Designing and implementing these systems used by some of the biggest brands in the world quickly becomes an immensely complex task since Maersk has high expectations for the quality, scalability, uptime, maintainability and security of the platform. 
-    In Maersk I am currently responsible for managing a migrating project where me and 3 other developers  are converting an old system from Golang into a  .NET microservice. I have taken charge of  creating, estimating and assigning user stories in Jira, communicating our progress to the stakeholders, identifying potential problems and work out solutions, and supporting/mentoring our junior developers. 
-    I have also implemented a few Vue.js frontend stories and looked into DevOps related deployment tasks using Github. 
-    </p>
+        
+        <p>
+          Maersk is a global leader in container logistics and is currently undergoing a digital transformation to become the world's leading integrator of container logistics.
+          To achieve this ambitious goal we are using the latest technologies and best practices including Azure, Kubernetes, Github Pipelines, and Kafka.
+        </p>
+
+        <p>
+          Since I started in Maersk January 2022 I have had the opportunity to work with a lot of talented developers in several different areas and technologies.
+          <ul>
+            <li>
+              Most of my time I have spent in the backend where I have been tasked to migrate our old integration system written in Golang to a .NET microservice.
+              This has been a great opportunity for me to further enhance my skills knowlegde on how to implement scalable and maintainable microservices using .NET, Kafka, and Postgres SQL.
+            </li>
+            <li>
+              In the frontend I have been working with Vue.js to implement new features and improve the user experience.
+            </li>
+          </ul> 
+          
+          Additionally, I have taken the initiative on a lot of supporting tasks such as:
+          <ul>
+            <li>
+              Designing and implementing core system components.
+            </li>
+            <li>
+              Providing support, guidance, and feedback to junior developers
+            </li>
+            <li>
+              Refining and estimating new tasks in Jira 
+            </li>
+            <li>
+              Monitoring and providing support in our production environment
+            </li>
+            <li>
+              Highlighting and reducing potential risks and tech debt.
+            </li>
+          </ul> 
+        </p>
+        <p>
+          I am particularly proud of my continuos effort to improve the quality of our codebase and the upskilling of our team members. 
+          To which I have recieved a lot of positive feedback and two company awards for. 🏆 
+        </p>
+        <p>
+          Outside of my regular work I am trying my best to actively contribute to the social environment in the company by:
+          <ul>
+            <li>
+              Joining for weekly sports sessions with my colleagues such as volley ball and badminton
+            </li>
+            <li>
+              Arrange board game sessions
+            </li>
+            <li>
+              Remember and celebrate birthdays and other special occasions
+            </li>
+          </ul>
+        </p>
       </HistoryEntry>
 
       <HistoryEntry
@@ -101,6 +152,12 @@ export default function ExperienceSection() {
                     Refactored and improved the code quality of our central systems.
                 </li>
             </ul>
+        </p>
+
+        <p>
+          I formed a lot of good friendships at Dalux, friendships that are still strong today. 
+          Dalux' great culture inspired me to take the initiative to arrange social events such as football, friday bars, and beach trips.
+          I believe that a good culture is essential for a good work environment and I believe that my efforts helped create a great culture at Dalux.
         </p>
         <p>
             After 3 years I decided to leave Dalux because I wanted to try something new and I was curious to see what challenges I would find in other companies.

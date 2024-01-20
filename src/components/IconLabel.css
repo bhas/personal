@@ -1,6 +1,10 @@
 
+.icon-label:visited {
+  color: inherit;
+}
+
 .icon-label {
-  color: #222;
+  /* color: #222; */
   font-size: 12pt;
   /* margin-top: 15px; */
   /* padding: 5px 10px; */

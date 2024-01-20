@@ -15,6 +15,7 @@ export default function ProjectsSection() {
                 <p>
                     I have have always loved learning and teaching, and HackYourFuture is a great opportunity for me to do both while also helping people in need.
                     Since I joined, I have taught students how to code in <span className="badge">Javascript</span>, <span className="badge">SQL</span>, and <span className="badge">React</span> and provided them feedback and guidance on their projects.
+                    It has also enabled my to connect with a lot of talented people with different backgrounds and cultures, which is still an enjoyable and great learning experience for me.
                 </p>
             </Project>
 

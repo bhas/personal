@@ -1,6 +1,7 @@
-import { companies } from "../data/resumeData";
-import Card from "./Card";
-import HistoryEntry from "./HistoryEntry";
+import { badges, companies } from "../../data/resumeData";
+import Badge from "../Badge";
+import Card from "../Card";
+import HistoryEntry from "../HistoryEntry";
 
 export default function ExperienceSection() {
   return (
@@ -12,7 +13,18 @@ export default function ExperienceSection() {
         endDate={null}
         type={"work"}
       >
-        
+        <div>
+          <Badge badge={badges.dotnet}/>
+          <Badge badge={badges.csharp}/>
+          <Badge badge={badges.sql}/>
+          <Badge badge={badges.vue}/>
+          <Badge badge={badges.css}/>
+          <Badge badge={badges.azure}/>
+          <Badge badge={badges.githubActions}/>
+          <Badge badge={badges.kafka}/>
+          <Badge badge={badges.jira}/>
+          <Badge badge={badges.github}/>
+        </div>
         <p>
           Maersk is a global leader in container logistics and is currently undergoing a digital transformation to become the world's leading integrator of container logistics.
           To achieve this ambitious goal we are using the latest technologies and best practices including Azure, Kubernetes, Github Pipelines, and Kafka.
@@ -76,13 +88,21 @@ export default function ExperienceSection() {
         endDate={new Date(2022, 0, 1)}
         type={"work"}
       >
+        <div>
+          <Badge badge={badges.dotnet}/>
+          <Badge badge={badges.csharp}/>
+          <Badge badge={badges.sql}/>
+          <Badge badge={badges.react}/>
+          <Badge badge={badges.css}/>
+          <Badge badge={badges.azureDevOps}/>
+        </div>
         <p>
             Republica was the first place where I really got to stand on my own feet. 
             Beforehand I had mostly worked with a monolithic architecture and tools developed inhouse in Dalux.
-            Republica was had implemented their APIs as microservices using <span className="badge">.NET Core</span> with <span className="badge">SQL Server</span> and all communication between the services was implemented using event queues or API calls.
-            For the UI we used <span className="badge">React</span>.
+            Republica was had implemented their APIs as microservices using .NET Core with SQL Server and all communication between the services was implemented using event queues or API calls.
+            For the UI we used React.
             
-            Everything was managed using <span className="badge">Azure DevOps</span> and deployed to local Linux servers.
+            Everything was managed using Azure DevOps and deployed to local Linux servers.
         </p>
         <p>
             Although we were using a lot of new technologies, I quickly found that the code quality was quite low which caused the system to be very unstable and slow.
@@ -94,17 +114,17 @@ export default function ExperienceSection() {
                 <li>
                     Refactored and optimized our service used for importing all our data into the system. 
                     Not only did it make the system much more stable but it also cut down the time it took to import data from 2 hours to less than 2 minutes.
-                    Most of the performance increase was achieved by optimizing the <span className="badge">SQL</span> queries and the data structures used in the service.
+                    Most of the performance increase was achieved by optimizing the SQL queries and the data structures used in the service.
                 </li>
                 <li>
                     Implement a search service which enabled users quickly search through millions of data entries with complex queries. 
-                    The service was implemented using Apache Solr and <span className="badge">C#</span>.
+                    The service was implemented using Apache Solr and C#.
                 </li>
                 <li>
-                    improved our supporting features such as CI/CD deployments and documentation in <span className="badge">Azure DevOps</span>, documentation, and logging via Graylog.
+                    improved our supporting features such as CI/CD deployments and documentation in Azure DevOps, documentation, and logging via Graylog.
                 </li>
                 <li>
-                    Help implement new features in our UI developed in <span className="badge">React</span>
+                    Help implement new features in our UI developed in React
                 </li>
             </ul>
         </p>

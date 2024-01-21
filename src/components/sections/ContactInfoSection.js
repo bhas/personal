@@ -1,5 +1,5 @@
-import Card from "./Card";
-import IconLabel from "./IconLabel";
+import Card from "../Card";
+import IconLabel from "../IconLabel";
 import "./ContactInfoSection.css";
 
 

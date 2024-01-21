@@ -1,7 +1,8 @@
-import ContactInfoSection from "./components/ContactInfoSection";
-import ExperienceSection from "./components/ExperienceSection";
-import ProjectsSection from "./components/ProjectsSection";
+import ContactInfoSection from "./components/sections/ContactInfoSection";
+import ExperienceSection from "./components/sections/ExperienceSection";
+import ProjectsSection from "./components/sections/ProjectsSection";
 import "./App.css";
+import SkillsSection from "./components/sections/SkillsSection";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <div className="subtitle">Software Engineer</div>
       </div>
       <ContactInfoSection />
+      <SkillsSection />
       <ExperienceSection />
       <ProjectsSection/>
     </>

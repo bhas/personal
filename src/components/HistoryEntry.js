@@ -24,7 +24,7 @@ function HistoryEntryContent({title, subtitle, iconSrc, iconUrl, children}) {
                 <span className="title">{title}</span>
                 <span>at</span>
                 <a className="company-link" href={iconUrl} target="_blank">
-                    <img height={24} className="icon" src={iconSrc} alt={subtitle}/>
+                    <img height={18} className="icon" src={iconSrc} alt={subtitle}/>
                     <div>{subtitle}</div>
                 </a>
             </div>

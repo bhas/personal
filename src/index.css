@@ -2,7 +2,8 @@ body {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 11pt;
-  background-color: rgb(36, 37, 48);
+  /* background-color: rgb(36, 37, 48); */
+  background-color: #232F3E;
 }
 
 #root {

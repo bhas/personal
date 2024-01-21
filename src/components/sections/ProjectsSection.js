@@ -1,7 +1,7 @@
-import Card from "./Card";
-import IconLabel from "./IconLabel";
-import Image from "./Image";
-import Project from "./Project";
+import Card from "../Card";
+import IconLabel from "../IconLabel";
+import Image from "../Image";
+import Project from "../Project";
 import "./ProjectsSection.css";
 
 export default function ProjectsSection() {

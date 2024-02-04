@@ -24,7 +24,6 @@ export default function SkillsSection() {
           <Badge badge={badges.javascript}/>
           <Badge badge={badges.css}/>
           <Badge badge={badges.d3}/>
-          <Badge badge={badges.bootstrap}/>
         </div>
 
         <b>DevOps</b>

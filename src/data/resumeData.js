@@ -55,10 +55,6 @@ export const badges = {
     label: "D3.js",
     color: frontendColor
   },
-  bootstrap: {
-    label: "Bootstrap",
-    color: frontendColor
-  },
 
 
 

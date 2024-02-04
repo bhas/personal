@@ -3,6 +3,7 @@ import ExperienceSection from "./components/sections/ExperienceSection";
 import ProjectsSection from "./components/sections/ProjectsSection";
 import "./App.css";
 import SkillsSection from "./components/sections/SkillsSection";
+import PersonalSection from "./components/sections/PersonalSection";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <div className="subtitle">Software Engineer</div>
       </div>
       <ContactInfoSection />
+      <PersonalSection />
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection/>

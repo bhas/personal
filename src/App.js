@@ -4,6 +4,7 @@ import ProjectsSection from "./components/sections/ProjectsSection";
 import "./App.css";
 import SkillsSection from "./components/sections/SkillsSection";
 import PersonalSection from "./components/sections/PersonalSection";
+import Header from "./components/Header";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <h1>Bjørn Vinther</h1>
         <div className="subtitle">Software Engineer</div>
       </div>
+      <Header />
       <ContactInfoSection />
       <PersonalSection />
       <SkillsSection />

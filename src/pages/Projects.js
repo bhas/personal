@@ -1,12 +1,12 @@
-import { badges } from "../../data/resumeData";
-import BadgeContainer from "../BadgeContainer";
-import Card from "../Card";
-import IconLabel from "../IconLabel";
-import Image from "../Image";
-import Project from "../Project";
-import "./ProjectsSection.css";
+import BadgeContainer from "../components/BadgeContainer";
+import Card from "../components/Card";
+import IconLabel from "../components/IconLabel";
+import Image from "../components/Image";
+import Project from "../components/Project";
+import { badges } from "../data/resumeData";
+import "./Projects.css";
 
-export default function ProjectsSection() {
+export default function Projects() {
   return (
     <Card title={"Projects"}>
       <Project title={"HackYourFuture Denmark"} subtitle={"Volunteering"}>
@@ -24,10 +24,11 @@ export default function ProjectsSection() {
         <p>
           I have have always loved learning and teaching, and HackYourFuture is
           a great opportunity for me to do both while also helping people in
-          need. Since I joined, I have taught students how to code in Javascript, SQL, and React and provided them feedback and
-          guidance on their projects. It has also enabled my to connect with a
-          lot of talented people with different backgrounds and cultures, which
-          is still an enjoyable and great learning experience for me.
+          need. Since I joined, I have taught students how to code in
+          Javascript, SQL, and React and provided them feedback and guidance on
+          their projects. It has also enabled my to connect with a lot of
+          talented people with different backgrounds and cultures, which is
+          still an enjoyable and great learning experience for me.
         </p>
       </Project>
 
@@ -39,10 +40,11 @@ export default function ProjectsSection() {
           url="https://github.com/bhas"
         />
         <p>
-          This webpage was a fun little project I did to improve my React skills and showcase some of what
-          I can do. I have challenged myself to learn how to use AWS and GitHub Actions to host the webpage on a
-          custom domain and automatically deploy new versions of the webpage
-          when I push new code to GitHub.
+          This webpage was a fun little project I did to improve my React skills
+          and showcase some of what I can do. I have challenged myself to learn
+          how to use AWS and GitHub Actions to host the webpage on a custom
+          domain and automatically deploy new versions of the webpage when I
+          push new code to GitHub.
         </p>
         <p>
           I am planning to continusly work on this webpage and add more features
@@ -168,9 +170,9 @@ export default function ProjectsSection() {
               </ul>
             </p>
             <p>
-              Using Unity and C# we managed to develop an app
-              that could overlay the digital model on top of the mobile device's
-              camera. But to do that we had to:
+              Using Unity and C# we managed to develop an app that could overlay
+              the digital model on top of the mobile device's camera. But to do
+              that we had to:
               <ul>
                 <li>
                   Determine the location of the user by using the camera to

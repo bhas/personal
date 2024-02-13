@@ -1,0 +1,16 @@
+
+
+b {
+  margin: 10px 0 3px 0;
+}
+
+b:first-child {
+  margin-top: 0;
+}
+
+.personal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+}

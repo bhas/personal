@@ -4,25 +4,21 @@
 }
 
 .icon-label {
-  /* color: #222; */
-  font-size: 12pt;
-  /* margin-top: 15px; */
-  /* padding: 5px 10px; */
+  /* font-size: 1.2em; */
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  border-radius: 3px;
 }
-/* 
-.icon-label:hover {
-  background-color: #ddd;
-} */
+
+.icon-label[href]:hover {
+  color: #ddd;
+}
 
 .icon-label span {
   margin-left: 0.5rem;
 }
 
 .icon-label i {
-  font-size: 16pt;
+  font-size: 1.3em;
 }

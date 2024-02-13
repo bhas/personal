@@ -1,10 +1,9 @@
-import { badges, companies } from "../../data/resumeData";
-import Badge from "../Badge";
-import BadgeContainer from "../BadgeContainer";
-import Card from "../Card";
-import HistoryEntry from "../HistoryEntry";
+import BadgeContainer from "../components/BadgeContainer";
+import Card from "../components/Card";
+import HistoryEntry from "../components/HistoryEntry";
+import { badges, companies } from "../data/resumeData";
 
-export default function ExperienceSection() {
+export default function Experience() {
   return (
     <Card title={"Experience"}>
       <HistoryEntry

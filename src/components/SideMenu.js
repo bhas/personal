@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import "./SideMenu.css";
 import { slide as Menu } from "react-burger-menu";
 import IconLabel from "./IconLabel";
+import { GenerateDocument } from "../pdf/PdfGenerator";
 
 export default function SideMenu() {
   return (
     <Menu>
-      
+      <button onClick={() => GenerateDocument()}>Generate</button>
       <div>
         <h1>Bjørn Vinther</h1>
         <div className="icon-container">

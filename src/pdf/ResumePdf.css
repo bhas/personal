@@ -1,0 +1,13 @@
+
+
+
+.page {
+  flex-direction: row;
+  background-color: "#E4E4E4";
+}
+
+.section {
+  margin: 10px;
+  padding: 10px;
+  flex-grow: 1;
+}

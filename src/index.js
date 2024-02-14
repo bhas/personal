@@ -11,7 +11,7 @@ import { PDFViewer } from '@react-pdf/renderer';
 import ResumePdf from './pdf/ResumePdf';
 
 const App = () => (
-  <PDFViewer width="100%" height="600px">
+  <PDFViewer width="100%" height="900px">
     <ResumePdf />
   </PDFViewer>
 );

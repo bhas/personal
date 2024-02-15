@@ -42,10 +42,11 @@ Font.register({
 });
 
 const colors = {
-  accent: "#0D335E",
+  // accent: "#323b4c",
+  accent: "#374053",
   default: "#777",
   light: "#666",
-}
+};
 const styles = StyleSheet.create({
   page: {
     display: "flex",
@@ -55,17 +56,17 @@ const styles = StyleSheet.create({
     color: "#777",
     fontFamily: "Noto",
     fontWeight: 100,
-    lineHeight: 1.3,
+    lineHeight: 1.4,
   },
 
   // side panel
   sidePanel: {
     flexShrink: "1 0 auto",
     fontSize: 10,
-    fontWeight: 500,
     alignItems: "stretch",
     flexDirection: "column",
-    backgroundColor: "#EEEEF2",
+    // backgroundColor: "#EEEEF2",
+    backgroundColor: colors.accent,
     padding: 20,
   },
   sideImg: {
@@ -75,19 +76,25 @@ const styles = StyleSheet.create({
   },
   sideHeader: {
     // color: "#0D335E",
-    color: colors.accent,
-    fontSize: 16,
-    fontWeight: 500,
-    marginTop: 30
+    // color: colors.accent,
+    color: "#8da5db",
+    fontSize: 18,
+    fontWeight: 900,
+    marginTop: 30,
   },
   sideLabel: {
-    color: "#333",
-    fontWeight: 500,
+    // color: "#333",
+    fontFamily: "RobotoSlab",
+    fontWeight: 900,
     fontSize: 11,
+    color: "#FFF",
     marginTop: 8,
   },
   sideText: {
-    color: "#666",
+    // color: "#666",
+    fontWeight: 500,
+    color: "#BBC",
+    // fontFamily: "RobotoSlab",
     marginTop: 2,
   },
 
@@ -143,6 +150,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "baseline",
   },
+  eduEntry: {
+    marginTop: 5,
+    marginBottom: 10,
+  },
+  eduPosition: {
+    fontSize: 12,
+    fontWeight: 500,
+    color: "#333",
+  },
 });
 
 export default function ResumePdf() {
@@ -156,6 +172,8 @@ export default function ResumePdf() {
           />
 
           <Text style={styles.sideHeader}>Contact</Text>
+          <Text style={styles.sideLabel}>Phone</Text>
+          <Text style={styles.sideText}>+45 53 56 81 12</Text>
           <Text style={styles.sideLabel}>Email</Text>
           <Text style={styles.sideText}>g.bvinther@gmail.com</Text>
           <Text style={styles.sideLabel}>Website</Text>
@@ -172,16 +190,16 @@ export default function ResumePdf() {
           <Text style={styles.sideLabel}>Location</Text>
           <Text style={styles.sideText}>Copenhagen, Denmark</Text>
 
-          <Text style={styles.sideHeader}>Technical Skills</Text>
+          <Text style={styles.sideHeader}>Skills</Text>
+          <Text style={styles.sideLabel}>Backend</Text>
+          <Text style={styles.sideText}>C# / .NET Core</Text>
+          <Text style={styles.sideText}>SQL</Text>
+          <Text style={styles.sideText}>Azure</Text>
           <Text style={styles.sideLabel}>Frontend</Text>
           <Text style={styles.sideText}>React</Text>
           <Text style={styles.sideText}>Vue.js</Text>
           <Text style={styles.sideText}>Angular</Text>
           <Text style={styles.sideText}>HTML / Javascript / CSS</Text>
-          <Text style={styles.sideLabel}>Backend</Text>
-          <Text style={styles.sideText}>C# / .NET Core</Text>
-          <Text style={styles.sideText}>SQL</Text>
-          <Text style={styles.sideText}>Azure</Text>
 
           {/* <Text style={styles.sideHeader}>Soft Qualities</Text>
           <Text style={styles.sideText}>Eye for detail</Text>
@@ -210,13 +228,6 @@ export default function ResumePdf() {
             I put a lot of pride and effort into the work I deliver. Growing as
             a person and software developer is one of my main motivations and I
             constantly seek out opportunities for that.
-          </Text>
-          <Text style={styles.text}>
-            Besides that, I’m a very social, relaxed, and humorous person who
-            gets along with most people. be creative though drawing or costume
-            crafting. Having a healthy work environment where people thrive
-            means a lot to me and I actively engage in activities to foster
-            that.
           </Text>
 
           <Text style={styles.header}>Experience</Text>
@@ -265,27 +276,21 @@ export default function ResumePdf() {
               to design and implement core systems and guiding junior
               developers.
             </Text>
-            <Text style={styles.text}>
-              I was involved in many different projects and tasks, but the most
-              notable ones were:
-            </Text>
           </ExperienceEntry>
 
           <Text style={styles.header}>Education</Text>
-          <View style={styles.expEntry}>
-            <Text style={styles.expTime}>
-              {formatDate(new Date(2017, 6, 1))}
-            </Text>
-            <Text style={styles.expCompany}>{companies.dtu.name}</Text>
-            <Text style={styles.expPosition}>
-              Master of Science in Engineering
-            </Text>
-            <Text style={styles.text}>
-              For my master I studied digital media technologies with a focus on
-              game development and 3D graphics. Here I learned how to develop
-              games and apps using Unity and C#.
-            </Text>
-          </View>
+          <EducationEntry
+            startDate={new Date(2015, 7, 1)}
+            endDate={new Date(2017, 6, 1)}
+            company={companies.dtu.name}
+            position="Master of Science (M.Sc.) in Engineering"
+          ></EducationEntry>
+          <EducationEntry
+            startDate={new Date(2011, 9, 1)}
+            endDate={new Date(2015, 7, 1)}
+            company={companies.itu.name}
+            position="Bachelor of Science (B.Sc.) in Software Development"
+          ></EducationEntry>
         </View>
       </Page>
     </Document>
@@ -304,6 +309,18 @@ function ExperienceEntry({ company, position, startDate, endDate, children }) {
         <Text style={styles.expCompany}>at {company}</Text>
       </View>
       {children}
+    </View>
+  );
+}
+
+function EducationEntry({ company, position, startDate, endDate }) {
+  return (
+    <View style={styles.eduEntry}>
+      <Text style={styles.expTime}>
+        {formatDate(startDate)} - {formatDate(endDate)}
+      </Text>
+      <Text style={styles.eduPosition}>{position}</Text>
+      <Text style={styles.expCompany}>at the {company}</Text>
     </View>
   );
 }

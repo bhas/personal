@@ -19,6 +19,11 @@ export const companies = {
     name: "Technical University of Denmark",
     linkedInUrl: "https://www.linkedin.com/school/technical-university-of-denmark/about/",
     iconUrl: process.env.PUBLIC_URL + "/logos/dtu.jpg",
+  },
+  itu: {
+    name: "IT University of Copenhagen",
+    linkedInUrl: "https://www.linkedin.com/school/it-university-of-copenhagen/about/",
+    iconUrl: null,
   }
 }
 

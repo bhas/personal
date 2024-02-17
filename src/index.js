@@ -8,11 +8,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { PDFViewer } from '@react-pdf/renderer';
-import ResumePdf from './pdf/ResumePdf';
+import PdfResume from './pdf/PdfResume';
 
 const App = () => (
   <PDFViewer width="100%" height="900px">
-    <ResumePdf />
+    <PdfResume />
   </PDFViewer>
 );
 

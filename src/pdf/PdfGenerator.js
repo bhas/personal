@@ -1,7 +1,7 @@
 
 import ReactPDF from '@react-pdf/renderer';
-import ResumePdf from './ResumePdf';
+import PdfResume from './PdfResume';
 
 export function GenerateDocument() {
-  ReactPDF.render(<ResumePdf />, `${__dirname}/example.pdf`);
+  ReactPDF.render(<PdfResume />, `${__dirname}/example.pdf`);
 }

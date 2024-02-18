@@ -1,7 +1,9 @@
 import React from "react";
-import { Page, Document, StyleSheet, Font } from "@react-pdf/renderer";
-import PdfSidePanel from "./components/PdfSidePanel";
-import PdfMainContent from "./components/PdfMainContent";
+import { Page, Document, StyleSheet, Font, View } from "@react-pdf/renderer";
+import PdfPage1SideContent from "./components/PdfPage1SideContent";
+import PdfPage1MainContent from "./components/PdfPage1MainContent";
+import PdfPage2MainContent from "./components/PdfPage2MainContent";
+import PdfPage2SideContent from "./components/PdfPage2SideContent";
 
 function SetupFonts() {
   Font.register({
@@ -53,6 +55,24 @@ function CreateStyles(colors) {
       fontWeight: 100,
       lineHeight: 1.4,
     },
+    sidePanel: {
+      flexShrink: "1 0 auto",
+      fontSize: 10,
+      alignItems: "stretch",
+      flexDirection: "column",
+      backgroundColor: colors.accent,
+      padding: 20,
+    },
+    mainPanel: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "stretch",
+      padding: 25,
+      paddingTop: 20,
+      paddingBottom: 20,
+      flexGrow: 1,
+      flexShrink: 1,
+    },
   });
 }
 
@@ -66,9 +86,22 @@ export default function PdfResume() {
   const styles = CreateStyles(colors);
   return (
     <Document title="Bjorn Vinther Resume" author="Bjorn Vinther">
-      <Page wrap={true} style={styles.page}>
-        <PdfSidePanel colors={colors} />
-        <PdfMainContent colors={colors} />
+      <Page wrap={true} style={styles.page} size={"A4"}>
+        <View style={styles.sidePanel}>
+          <PdfPage1SideContent colors={colors} />
+        </View>
+        <View style={styles.mainPanel}>
+          <PdfPage1MainContent colors={colors} />
+        </View>
+      </Page>
+
+      <Page wrap={true} style={styles.page} size={"A4"}>
+        <View style={styles.sidePanel}>
+          <PdfPage2SideContent colors={colors} />
+        </View>
+        <View style={styles.mainPanel}>
+          <PdfPage2MainContent colors={colors} />
+        </View>
       </Page>
     </Document>
   );

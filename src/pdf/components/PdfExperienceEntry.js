@@ -4,7 +4,7 @@ import { formatDate, formatTimeElapsed } from "../../utilities/DateUtilities";
 function CreateStyles(colors) {
   return StyleSheet.create({
     entry: {
-      marginTop: 5,
+      marginTop: 0,
       marginBottom: 20,
     },
     timeWrapper: {

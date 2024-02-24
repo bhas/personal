@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "@react-pdf/renderer";
+import { StyleSheet, Text, View, Link } from "@react-pdf/renderer";
 import { formatDate } from "../../utilities/DateUtilities";
 
 function CreateStyles(colors) {
@@ -11,10 +11,10 @@ function CreateStyles(colors) {
       fontSize: 10,
       fontWeight: 500,
       marginRight: 3,
-      // color: colors.lightBlue,
+      color: colors.lightBlue,
     },
     company: {
-      marginLeft: 5,
+      // marginLeft: 5,
       color: "#666",
     },
     position: {
@@ -25,15 +25,16 @@ function CreateStyles(colors) {
   });
 }
 
-export default function PdfEducationEntry({ company, position, startDate, endDate, colors}) {
+export default function PdfEducationEntry({ company, companyUrl, position, startDate, endDate, colors}) {
   const styles = CreateStyles(colors);
   return (
     <View style={styles.entry}>
       <Text style={styles.time}>
-        {formatDate(startDate)} - {formatDate(endDate)}
+        {/* {formatDate(startDate)} - {formatDate(endDate)} */}
+        {formatDate(endDate)}
       </Text>
       <Text style={styles.position}>{position}</Text>
-      <Text style={styles.company}>at the {company}</Text>
+      <Link src={companyUrl} style={styles.company}>{company}</Link>
     </View>
   );
 }

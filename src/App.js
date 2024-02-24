@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
+import Resume from "./pages/Resume";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="experience" element={<Experience />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="resume" element={<Resume />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

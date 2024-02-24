@@ -42,10 +42,10 @@ export default function PdfPage1SideContent({ colors }) {
       <Text style={styles.text}>+45 53 56 81 12</Text>
       <Text style={styles.label}>Email</Text>
       <Text style={styles.text}>g.bvinther@gmail.com</Text>
-      <Text style={styles.label}>Website</Text>
+      {/* <Text style={styles.label}>Website</Text>
       <Link style={styles.text} src="https://bvinther.com">
         bvinther.com
-      </Link>
+      </Link> */}
       <Text style={styles.label}>LinkedIn</Text>
       <Link
         style={styles.text}
@@ -72,8 +72,9 @@ export default function PdfPage1SideContent({ colors }) {
       <Text style={styles.header}>Soft Qualities</Text>
       <Text style={styles.text}>Eye for details</Text>
       <Text style={styles.text}>Proactive team player</Text>
-      <Text style={styles.text}>Constant learning</Text>
+      <Text style={styles.text}>Passionate learner</Text>
       <Text style={styles.text}>Caring for others</Text>
+      <Text style={styles.text}>Social and charismatic</Text>
     </>
   );
 }

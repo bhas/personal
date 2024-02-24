@@ -24,6 +24,11 @@ export const companies = {
     name: "IT University of Copenhagen",
     linkedInUrl: "https://www.linkedin.com/school/it-university-of-copenhagen/about/",
     iconUrl: null,
+  },
+  hyf: {
+    name: "HackYourFuture Denmark",
+    linkedInUrl: "https://www.linkedin.com/school/hackyourfuture-denmark/about/",
+    iconUrl: null,
   }
 }
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { Page, Document, StyleSheet, Font, View } from "@react-pdf/renderer";
-import PdfPage1SideContent from "./components/PdfPage1SideContent";
-import PdfPage1MainContent from "./components/PdfPage1MainContent";
-import PdfPage2MainContent from "./components/PdfPage2MainContent";
-import PdfPage2SideContent from "./components/PdfPage2SideContent";
+import PdfPage1SideContent from "./pages/PdfPage1SideContent";
+import PdfPage1MainContent from "./pages/PdfPage1MainContent";
+import PdfPage2MainContent from "./pages/PdfPage2MainContent";
+import PdfPage2SideContent from "./pages/PdfPage2SideContent";
 
 function SetupFonts() {
   Font.register({

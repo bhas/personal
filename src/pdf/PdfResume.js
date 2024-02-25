@@ -9,36 +9,20 @@ function SetupFonts() {
   Font.register({
     family: "Noto",
     fonts: [
-      { src: process.env.PUBLIC_URL + "/NotoSans-Light.ttf", fontWeight: 100 },
+      { src: process.env.PUBLIC_URL + "/fonts/NotoSans-Light.ttf", fontWeight: 100 },
       {
-        src: process.env.PUBLIC_URL + "/NotoSans-Regular.ttf",
+        src: process.env.PUBLIC_URL + "/fonts/NotoSans-Regular.ttf",
         fontWeight: 500,
       },
       {
-        src: process.env.PUBLIC_URL + "/NotoSans-SemiBold.ttf",
+        src: process.env.PUBLIC_URL + "/fonts/NotoSans-SemiBold.ttf",
         fontWeight: 900,
       },
     ],
   });
   Font.register({
-    family: "Noto-Bold",
-    src: process.env.PUBLIC_URL + "/NotoSans-ExtraBold.ttf",
-  });
-  Font.register({
-    family: "Noto-Regular",
-    src: process.env.PUBLIC_URL + "/NotoSans-Regular.ttf",
-  });
-  // Font.register({
-  //   family: "Roboto",
-  //   src: "http://fonts.gstatic.com/s/roboto/v16/zN7GBFwfMP4uA6AR0HCoLQ.ttf",
-  // });
-  Font.register({
-    family: "Protest",
-    src: process.env.PUBLIC_URL + "/protest.ttf",
-  });
-  Font.register({
     family: "RobotoSlab",
-    src: "http://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zp0EAVxt0G0biEntp43Qt6E.ttf",
+    src: process.env.PUBLIC_URL + "/fonts/RobotoSlab-Medium.ttf",
   });
 }
 

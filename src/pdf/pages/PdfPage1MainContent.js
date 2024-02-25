@@ -73,7 +73,7 @@ export default function PdfPage1MainContent({ colors }) {
         colors={colors}
       >
         <Text style={styles.text}>
-          At Maersk, I played an essential role in the implementation and
+          At Maersk, I'm playing an essential role in the implementation and
           maintenance of our integration between Maersk's platform and
           customers' systems. A significant challenge involved migrating our
           legacy Golang-based integration to a .NET microservice architecture.

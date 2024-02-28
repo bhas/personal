@@ -16,7 +16,7 @@ export default function SideMenu() {
           <IconLabel iconClass="fa-brands fa-github" />
         </div>
       </div>
-      <div className="navigation-container">
+      <div className="navigation-container font-bold underline" >
         <Link to="/">Home</Link>
         <Link to="/about">About Me</Link>
         <Link to="/experience">Experience</Link>

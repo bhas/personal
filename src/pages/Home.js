@@ -10,16 +10,12 @@ export default function Home() {
         <div className="subtitle">Passionate Software Engineer</div>
       </div>
       <ContactInfoSection />
-      <h1>Who I am</h1>
+      {/* <h1>Who I am</h1>
       <h1>Technical Skills</h1>
       <h1>What I offer</h1>
       <h1>Work experience</h1>
       <h1>Side projects</h1>
-      <h1>What motives me</h1>
-
-      <Card title="Contact Information">
-        Some text
-      </Card>
+      <h1>What motives me</h1> */}
     </>
   );
 }

@@ -88,18 +88,3 @@ h1 {
 .bm-item:not(:last-child) {
   margin-bottom: 30px;
 }
-
-.navigation-container {
-  display: flex !important;
-  flex-direction: column;
-}
-
-.navigation-container > a {
-  color: white;
-  text-decoration: none;
-  margin: 10px 0;
-}
-
-.navigation-container > a:hover {
-  color: orange;
-}

@@ -1,14 +1,13 @@
-import Badge from "../components/Badge";
+import BadgeContainer from "../components/BadgeContainer";
 import Card from "../components/Card";
 import Image from "../components/Image";
 import { badges } from "../data/resumeData";
-import "./About.css";
 
 export default function About() {
   return (
     <>
       <Card title={"About Me"}>
-        <div className="personal-container">
+        <div className="flex flex-row">
           <div>
             <p>
               I am a 31 year old guy with a great interest in programming. My
@@ -40,39 +39,16 @@ export default function About() {
 
       <Card title={"Skills"}>
         <b>Backend</b>
-        <div>
-          <Badge badge={badges.dotnet} />
-          <Badge badge={badges.csharp} />
-          <Badge badge={badges.go} />
-          <Badge badge={badges.sql} />
-        </div>
+        <BadgeContainer badges={[badges.dotnet, badges.csharp, badges.go, badges.sql]} />
 
         <b>Frontend</b>
-        <div>
-          <Badge badge={badges.react} />
-          <Badge badge={badges.vue} />
-          <Badge badge={badges.angular} />
-          <Badge badge={badges.typescript} />
-          <Badge badge={badges.javascript} />
-          <Badge badge={badges.css} />
-          <Badge badge={badges.d3} />
-        </div>
+        <BadgeContainer badges={[badges.react, badges.vue, badges.angular, badges.typescript, badges.javascript, badges.css, badges.d3]} />
 
         <b>DevOps</b>
-        <div>
-          <Badge badge={badges.azure} />
-          <Badge badge={badges.aws} />
-          <Badge badge={badges.azureDevOps} />
-          <Badge badge={badges.githubActions} />
-          <Badge badge={badges.kafka} />
-        </div>
+        <BadgeContainer badges={[badges.azure, badges.aws, badges.azureDevOps, badges.githubActions, badges.kafka]} />
 
         <b>Other</b>
-        <div>
-          <Badge badge={badges.github} />
-          <Badge badge={badges.jira} />
-          <Badge badge={badges.unity} />
-        </div>
+        <BadgeContainer badges={[badges.github, badges.jira, badges.unity]} />
       </Card>
     </>
   );

@@ -1,12 +1,11 @@
 import Card from "../Card";
 import Image from "../Image";
-import "./PersonalSection.css";
 
 export default function PersonalSection() {
   return (
     <>
       <Card title={"About Me"}>
-        <div className="personal-container">
+        <div className="flex flex-row items-stretch justify-stretch">
           <div>
             <p>
               I am a 31 year old guy with a great interest in programming. My

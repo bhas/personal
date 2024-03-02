@@ -2,7 +2,6 @@ import BadgeContainer from "../components/BadgeContainer";
 import Card from "../components/Card";
 import Image from "../components/Image";
 import { badges } from "../data/resumeData";
-import "./About.css";
 
 export default function About() {
   return (

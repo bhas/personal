@@ -4,7 +4,6 @@ import IconLabel from "../components/IconLabel";
 import Image from "../components/Image";
 import Project from "../components/Project";
 import { badges } from "../data/resumeData";
-import "./Projects.css";
 
 export default function Projects() {
   return (
@@ -126,7 +125,7 @@ export default function Projects() {
         }
         subtitle={"Master's Thesis"}
       >
-        <div className="thesis-content-container">
+        <div className="flex flex-row items-start">
           <div>
             <p>
               My friend and I wrote our thesis in collaboration with Dalux on

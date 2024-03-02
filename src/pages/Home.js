@@ -1,13 +1,11 @@
-import Card from "../components/Card";
 import ContactInfoSection from "../components/sections/ContactInfoSection";
-import "./Home.css";
 
 export default function Home() {
   return (
     <>
-      <div className="contact-info-container">
-        <h1>Bjørn Vinther</h1>
-        <div className="subtitle">Passionate Software Engineer</div>
+      <div className="flex flex-col items-center py-10">
+        <h1 className="text-white font-bold mb-3 text-5xl">Bjørn Vinther</h1>
+        <div className="text-orange-400 font-normal text-2xl">Passionate Software Engineer</div>
       </div>
       <ContactInfoSection />
       {/* <h1>Who I am</h1>

@@ -49,18 +49,18 @@ export default function PdfPage2MainContent({ colors }) {
         colors={colors}
       >
         <Text style={styles.text}>
-          My professional journey started at Dalux, where I served as a
+          My professional journey started at Dalux, where I worked as a
           full-stack developer. With time, I got more responsibilities and
-          supported the team by designing an implementating core system
-          components in collaboration with project owners.
+          supported the team by designing an implementing core system
+          components in collaboration with others.
         </Text>
         <PdfBulletList
           text={"Key contributions:"}
           items={[
             "Drove the development of new features across both backend and frontend domains, contributing to end-to-end enhancements of our systems.",
             "Collaborated with colleagues on a large-scale project aimed at modernizing our single-page application, using Angular and TypeScript.",
-            "Initiated and organized social initiatives, including sports events and Friday bars, maintaining a healthy company culture.",
-            "Acted as the primary architect and implementer of a data-handover system bridging crucial information between the company's core platforms.",
+            "Organized social initiatives, including sports events and Friday bars, maintaining a healthy company culture.",
+            "Acted as the primary architect and implementer of a data-handover system bridging crucial data between the company's core platforms.",
           ]}
         />
       </PdfExperienceEntry>

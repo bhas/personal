@@ -45,15 +45,15 @@ export default function PdfPage1MainContent({ colors }) {
         areas of software development. I embrace coding as a craft and put a lot
         of pride and effort into the work I deliver. It motives me to learn new
         skills and create user friendly, scalable solutions in collaborating
-        with others. With a proactive approach, I tackle complex challenges and
-        deliver high-quality results. My strength lies in analyzing requirements
-        and finding elegant technical solutions.
+        with others. Breaking down requirements and coming up with elegant
+        solutions is where I excel and I'm not afraid to take charge and get
+        things done efficiently.
       </Text>
       <Text style={styles.text}>
         I believe teamwork and a supportive work environment are crucial for
-        success. That's why I actively participate in efforts to create a
-        positive work culture. With my friendly and humorous nature, I build
-        strong relationships with people around me.
+        success. That's why I actively participate in creating a friendly and
+        positive work culture. My curious, kind, and humourous personality
+        naturally makes me form strong relationships with people around me.
       </Text>
       {/* <Text style={styles.text}>
         If you are interested in learning more about me and my work, please
@@ -100,9 +100,7 @@ export default function PdfPage1MainContent({ colors }) {
         <Text style={styles.text}>
           During my time at Republica, I was a member of a small tech team
           responsible for overseeing the internal platform used to manage
-          product data and associated assets. When I started, the existing
-          codebase was in a poor state and the system was not reliable so our
-          first objective was to get it into a reliable state.
+          product data and associated assets.
         </Text>
         <PdfBulletList
           text={"Key contributions:"}

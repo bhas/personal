@@ -70,11 +70,12 @@ export default function PdfPage1SideContent({ colors }) {
       <Text style={styles.text}>HTML / Javascript / CSS</Text>
 
       <Text style={styles.header}>Soft Qualities</Text>
-      <Text style={styles.text}>Eye for details</Text>
+      <Text style={styles.text}>Attention to details</Text>
       <Text style={styles.text}>Proactive team player</Text>
       <Text style={styles.text}>Passionate learner</Text>
-      <Text style={styles.text}>Caring for others</Text>
-      <Text style={styles.text}>Social and charismatic</Text>
+      <Text style={styles.text}>Empatic & kind</Text>
+      <Text style={styles.text}>Strong communication</Text>
+      <Text style={styles.text}>Social & engaged</Text>
     </>
   );
 }

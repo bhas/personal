@@ -11,7 +11,7 @@ function CreateStyles(colors) {
       color: colors.lightBlue,
       fontSize: 18,
       fontWeight: 900,
-      marginTop: 30,
+      marginTop: 25,
     },
     label: {
       fontFamily: "RobotoSlab",
@@ -32,10 +32,10 @@ export default function PdfPage1SideContent({ colors }) {
   const styles = CreateStyles(colors);
   return (
     <>
-      <Image
+      {/* <Image
         style={styles.portrait}
         src={process.env.PUBLIC_URL + "/portrait4.jpg"}
-      />
+      /> */}
 
       <Text style={styles.header}>Contact</Text>
       <Text style={styles.label}>Phone</Text>

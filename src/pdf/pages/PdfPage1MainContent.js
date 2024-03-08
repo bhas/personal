@@ -75,15 +75,15 @@ export default function PdfPage1MainContent({ colors }) {
         <Text style={styles.text}>
           At Maersk, I'm playing an essential role in the implementation and
           maintenance of our integration between Maersk's platform and
-          customers' systems. A significant challenge involved migrating our
+          the customers' systems. A significant challenge involved migrating our
           legacy Golang-based integration to a .NET microservice architecture.
         </Text>
         <PdfBulletList
           text={"Key contributions:"}
           items={[
-            "Mordenized of our system by designing and implementing core components using technologies such as Kafka, PostgreSQL, and .NET.",
-            "Supported junior developers by providing guidance, and constructive feedback, fostering their professional growth and contribution to the team.",
-            "Enhanced system reliability by implementing robust monitoring solutions, enabling the early detection and resolution of issues within our production environment.",
+            "Mordenized our system by designing and implementing core components using technologies such as Kafka, PostgreSQL, and .NET.",
+            "Supported junior developers by providing guidance, and constructive feedback, helping their professional growth and contribution to the team.",
+            "Enhanced system reliability by implementing robust monitoring solutions, enabling the early detection and resolution of issues.",
             "Contributed to the frontend development efforts, utilizing Vue.js to implement new features and enhance the overall user experience.",
             "Planned social events for the Copenhagen based people such as beach volley and board game sessions.",
           ]}

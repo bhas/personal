@@ -11,7 +11,7 @@ function CreateStyles(colors) {
       color: colors.lightBlue,
       fontSize: 18,
       fontWeight: 900,
-      marginTop: 30,
+      marginTop: 25,
     },
     label: {
       fontFamily: "RobotoSlab",

@@ -46,6 +46,7 @@ function CreateStyles(colors) {
       flexDirection: "column",
       backgroundColor: colors.accent,
       padding: 20,
+      paddingTop: 0,
     },
     mainPanel: {
       display: "flex",

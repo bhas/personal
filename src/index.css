@@ -2,20 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11pt;
-  background-color: #232F3E;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 15px;
-  line-height: 1.4;
-}
-
-p:last-child {
-  margin-bottom: 0px;
+@layer base {
+  body {
+    @apply text-white bg-slate-800 m-0 p-0;
+  }
 }

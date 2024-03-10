@@ -5,22 +5,25 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Resume from "./pages/Resume";
+import { SideMenuContextProvider } from "./contexts/SideMenuContext";
 
 export default function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="experience" element={<Experience />} />
-            <Route path="projects" element={<Projects />} />
-            <Route path="resume" element={<Resume />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <SideMenuContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="experience" element={<Experience />} />
+              <Route path="projects" element={<Projects />} />
+              <Route path="resume" element={<Resume />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </SideMenuContextProvider>
     </>
   );
 }

@@ -43,7 +43,7 @@ function TimeLine({type}) {
     const color = "#139";
     return <svg className="grow-0 shrink-0 basis-10 mr-5 ml-2.5">
         <circle cx={dotSize} cy={dotSize} r={dotSize} fill={color}/>
-        <line x1={dotSize} y1={dotSize} x2={dotSize} y2="100%" stroke={color} stroke-width="2"/>
+        <line x1={dotSize} y1={dotSize} x2={dotSize} y2="100%" stroke={color} strokeWidth="2"/>
         <image xlinkHref={icon} x={dotSize-iconSize/2} y={dotSize-iconSize/2} height={iconSize} width={iconSize}></image>
     </svg>
 }

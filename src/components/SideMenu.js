@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import IconLabel from "./IconLabel";
-import { GenerateDocument } from "../pdf/PdfGenerator";
 import { useContext } from "react";
 import { SideMenuContext } from "../contexts/SideMenuContext";
+import IconLink from "./ui/IconLink";
+import IconButton from "./ui/IconButton";
 
 export default function SideMenu() {
   const { setSideMenuOpen } = useContext(SideMenuContext);
@@ -10,18 +10,18 @@ export default function SideMenu() {
   return (
     <div className="fixed z-50 inset-0 backdrop-blur-sm backdrop-brightness-75" onClick={() => setSideMenuOpen(false)}>
 
-      <div className="w-60 lg:w-72 h-full bg-slate-700 p-8"
-        onClick={preventEvent}>
-        <button onClick={() => GenerateDocument()}>Generate</button>
+      <div className="relative flex flex-col w-60 lg:w-72 h-full bg-slate-700 p-8 pt-20" onClick={preventEvent}>
+        <IconButton className="text-xl absolute top-3 right-3 text-slate-400 self-end"
+          icon={"fa-solid fa-xmark"}
+          onClick={() => setSideMenuOpen(false)}></IconButton>
         <div>
-          <h1>Bjørn Vinther</h1>
-          <div className="flex flex-row">
-            <IconLabel iconClass="fa-solid fa-at" />
-            <IconLabel iconClass="fa-brands fa-linkedin" />
-            <IconLabel iconClass="fa-brands fa-github" />
+          <div className="flex flex-row text-3xl justify-between">
+            <IconLink icon="fa-solid fa-envelope" href="mailto:g.bvinther@gmail.com" />
+            <IconLink icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/bjorn-vinther/" />
+            <IconLink icon="fa-brands fa-github" href="https://github.com/bhas" />
           </div>
-        </div>       
-        <nav className="flex flex-col mt-10 text-2xl" >
+        </div>
+        <nav className="flex flex-col mt-5 text-2xl" >
           <Link className="text-white my-3 hover:text-orange-500" to="/">Home</Link>
           <Link className="text-white my-3 hover:text-orange-500" to="/about">About Me</Link>
           <Link className="text-white my-3 hover:text-orange-500" to="/experience">Experience</Link>
@@ -33,6 +33,5 @@ export default function SideMenu() {
 }
 
 function preventEvent(e) {
-  e.preventDefault();
   e.stopPropagation();
 }

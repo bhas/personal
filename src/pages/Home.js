@@ -1,24 +1,31 @@
 import Card from "../components/ui/Card";
 import ContactInfoSection from "../components/sections/ContactInfoSection";
 import Header from "../components/ui/Header";
+import IconLabel from "../components/ui/IconLabel";
+import IconLink from "../components/ui/IconLink";
+import Timeline from "../components/timeline/Timeline";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center py-10 text-center lg:text-left">
         <h1 className="text-white font-bold mb-3 text-5xl">Bjørn Vinther</h1>
-        {/* <div className="text-orange-400 font-normal text-2xl">Passionate Software Engineer</div> */}
         <div className="text-orange-400 font-normal text-2xl mt-2">Your friendly neighborhood code tinkerer and problem solver.</div>
       </div>
 
-      {/* <ContactInfoSection /> */}
+      <div className="flex my-5 flex-row flex-wrap gap-8 items-center justify-center text-xl">
+        <IconLabel icon="fa-solid fa-envelope">g.bvinther@gmail.com</IconLabel>
+        <IconLink icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/bjorn-vinther/">Bjørn Vinther</IconLink>
+        <IconLink icon="fa-brands fa-github" href="https://github.com/bhas">github.com/bhas</IconLink>
+        <IconLabel icon="fa-solid fa-location-dot">Copenhagen, Denmark</IconLabel>
+      </div>
 
       <div className="text-xl my-2 text-left">
         I use my passion and expertise in software development to build large-scale software systems to make an ambitious and meaningful impact.
       </div>
 
 
-      <Header title="Skills" />
+      <Header title="My Skills" />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <Card title={"Backend"}>
           <ul>
@@ -61,7 +68,7 @@ export default function Home() {
         </Card>
       </div>
 
-      <Header title="Qualities" />
+      <Header title="My Qualities" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         <Card
           title="Quality-driven"
@@ -96,59 +103,63 @@ export default function Home() {
         </Card>
       </div>
 
+      <Header title="My Road to Glory!" />
+      <div className="text-center mb-5 text-lg text-slate-300">Below you can see my journey to where I am today.</div>
+      <Timeline />
 
-      {/* 
+      {/* <Header title="Side Projects" /> */}
 
-<ContactInfoSection />
-      
-       */}
+      <Header title="This Motivates Me!" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <Card
+          title="Ambitions"
+          icon={"fa-solid fa-rocket"}>
+          Working with people who have the ambitions and drive to develop world-class software systems. I want to be a part of something big with a meaningful impact.
+        </Card>
+        <Card
+          title="Socializing"
+          icon={"fa-solid fa-champagne-glasses"}>
+          Being a part of a dynamic workplace where and each day brings new challenges and opportunities and people are socially engaged with one another. 
+        </Card>
+        <Card
+          title="Learning"
+          icon={"fa-solid fa-book"}>
+          Learning new technologies and methodologies is a passion of mine. I love facing challenges which enables me to grow and develop. 
+        </Card>
+        <Card
+          title="Improving code"
+          icon={"fa-solid fa-snowplow"}>
+          Unlike many developers, I enjoy the process of debugging and refactoring. Thanks to my perfectionism, improving old code can feel just as rewarding as writing new code.
+        </Card>
+      </div>
 
-      {/* 
-      
-      <h1>Who I am</h1>
-      Your friendly neighborhood code tinkerer and problem solver. I'm Bjorn, a Copenhagen-based, fullstack developer passionated about building large software systems to accomplish ambitious goals. I have a strong interest in the social environment and how it can be improved through technology. I am a fast learner and I am always looking for new challenges to grow and improve my skills. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment. I am a very relaxed and humorous person who gets along with most people. I am a very social person and I thrive in a social environment.
-
-      
-
-<h1>What I offer</h1>
-Quality-driven
-Flexible
-Constant learner
-Smart worker
-Social
-Team player
-
-
-      
-      
-      
-
-
-      
-      <h1>Work experience</h1>
-      
-
-      <h1>Side projects</h1>
-      
-      
-      <h1>What motives me</h1> 
-      social environment
-      building large-scale ambitios systems
-      Learning
-      Making a difference
-      improving existing solutions
-
-      How I would like to improve
-      Cloud computing
-      new backend languages
-      large scale frontends
-
-
-
-      */}
-
-
-
+      <Header title="My Journey Ahead!" />
+      The future is uncertain, but I'm ready to take on the challenges that come my way. I hope to find the opportunities to further improve the below skills 
+      <div className="flex flex-col gap-8 max-w-xl self-center mt-5">
+        <Subsection title="Cloud computing">
+          Cloud computing and cloud architecture is a field I'm eager to learn more about. I want to be able to design and implement large-scale cloud solutions using popular cloud providers such as Azure or AWS.
+        </Subsection>
+        <Subsection title="Another backend language">
+          Currently, most of my backend experience is with C#/.NET, and though I like the language, I would love to learn another modern backend languages such as Golang or Python.
+          This would further widen my skillset and make me a more versatile developer.
+        </Subsection>
+        <Subsection title="Building large-scale UIs">
+          I have extensive experience with developing large-scale backend systems, but I have yet to learn how to build a large-scale frontend application.
+        </Subsection>
+        <Subsection title="Leadership">
+          Collaborating with people and learning how to shape a team to achieve great things is something I find fascinating. 
+          I have spent a lot of time reading about leadership and execution and are now ready to get some hands-on practice.
+        </Subsection>
+      </div>
     </>
   );
+}
+
+function Subsection({title, children}) {
+    return (
+      <div className="flex flex-col items-center">
+        <h2 className="mb-4 text-3xl text-slate-300">{title}</h2>
+        <div className="text-center text-slate-400">{children}</div>
+      </div>
+    )
 }

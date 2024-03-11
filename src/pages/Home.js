@@ -135,15 +135,15 @@ export default function Home() {
 
       <Header title="My Journey Ahead!" />
       The future is uncertain, but I'm ready to take on the challenges that come my way. I hope to find the opportunities to further improve the below skills 
-      <div className="flex flex-col gap-8 max-w-xl self-center mt-5">
+      <div className="flex flex-col gap-10 max-w-xl self-center mt-10">
         <Subsection title="Cloud computing">
           Cloud computing and cloud architecture is a field I'm eager to learn more about. I want to be able to design and implement large-scale cloud solutions using popular cloud providers such as Azure or AWS.
         </Subsection>
-        <Subsection title="Another backend language">
+        <Subsection title="+1 Backend">
           Currently, most of my backend experience is with C#/.NET, and though I like the language, I would love to learn another modern backend languages such as Golang or Python.
           This would further widen my skillset and make me a more versatile developer.
         </Subsection>
-        <Subsection title="Building large-scale UIs">
+        <Subsection title="Large-scale UIs">
           I have extensive experience with developing large-scale backend systems, but I have yet to learn how to build a large-scale frontend application.
         </Subsection>
         <Subsection title="Leadership">
@@ -158,7 +158,7 @@ export default function Home() {
 function Subsection({title, children}) {
     return (
       <div className="flex flex-col items-center">
-        <h2 className="mb-4 text-3xl text-slate-300">{title}</h2>
+        <h2 className="mb-2 text-3xl text-center text-slate-300">{title}</h2>
         <div className="text-center text-slate-400">{children}</div>
       </div>
     )

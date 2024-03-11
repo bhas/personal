@@ -144,5 +144,5 @@ function Line() {
 }
 
 function Highlight({ children }) {
-    return <b className="text-blue-200">{children}</b>
+    return <span className="text-blue-400">{children}</span>
 }

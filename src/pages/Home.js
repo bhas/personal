@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className="flex my-5 flex-row flex-wrap gap-8 items-center justify-center text-xl">
-        <IconLabel icon="fa-solid fa-envelope">g.bvinther@gmail.com</IconLabel>
+        <IconLink icon="fa-solid fa-envelope" href="mailto:g.bvinther@gmail.com">g.bvinther@gmail.com</IconLink>
         <IconLink icon="fa-brands fa-linkedin" href="https://www.linkedin.com/in/bjorn-vinther/">Bjørn Vinther</IconLink>
         <IconLink icon="fa-brands fa-github" href="https://github.com/bhas">github.com/bhas</IconLink>
         <IconLabel icon="fa-solid fa-location-dot">Copenhagen, Denmark</IconLabel>
@@ -62,7 +62,6 @@ export default function Home() {
             <li>Azure DevOps</li>
             <li>Kafka</li>
             <li>Unity</li>
-            {/* Tailwind, d3 */}
             <li>And more...</li>
           </ul>
         </Card>

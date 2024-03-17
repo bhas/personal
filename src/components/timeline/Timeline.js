@@ -25,6 +25,7 @@ export default function Timeline() {
             <TimelineItem
                 company={companies.hyf.name}
                 dateText={"Oct 2023 - Present"}
+                secondary
                 type="Volunteering"
                 startDate={companies.hyf.startDate}
                 endDate={companies.hyf.endDate}
@@ -75,6 +76,7 @@ export default function Timeline() {
             </TimelineItem>
             <TimelineItem company={companies.dtu.name}
                 startDate={companies.dtu.endDate}
+                secondary
                 href="/experience"
                 dateText={"Dec 2017"}
                 type="Master Studies" alignRight={isSmallDevice}>

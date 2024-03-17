@@ -22,8 +22,7 @@ export default function SideMenu() {
           </div>
         </div>
         <nav className="flex flex-col mt-5 text-2xl" >
-          <Link className="text-white my-3 hover:text-orange-500" to="/">Home</Link>
-          <Link className="text-white my-3 hover:text-orange-500" to="/about">About Me</Link>
+          <Link className="text-white my-3 hover:text-orange-500" to="/">Overview</Link>
           <Link className="text-white my-3 hover:text-orange-500" to="/experience">Experience</Link>
           <Link className="text-white my-3 hover:text-orange-500" to="/projects">Projects</Link>
         </nav>

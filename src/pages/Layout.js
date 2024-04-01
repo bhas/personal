@@ -10,7 +10,8 @@ export default function Layout() {
     <>
       {sideMenuOpen && <SideMenu />}
       <TopMenu />
-      <main className={`flex flex-col items-stretch lg:m-auto lg:max-w-5xl p-5`} >
+      <main className={`flex flex-col items-stretch`}>
+      {/* lg:m-auto lg:max-w-5xl */}
         <Outlet />
       </main>
     </>

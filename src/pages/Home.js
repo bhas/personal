@@ -6,15 +6,16 @@ import Skill from "../components/skill/Skill";
 import SkillHeader from "../components/skill/SkillHeader";
 import SkillLevelTip from "../components/skill/SkillLevelTip";
 import Section from "../components/ui/Section";
+import PageHeader from "../components/ui/PageHeader";
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center py-10 text-center lg:text-left">
-        <h1 className="text-white font-bold mb-3 text-5xl">
+      <div>
+        <PageHeader>
           Bjørn Vinther
-        </h1>
-        <div className="text-orange-400 font-normal text-2xl mt-2">
+        </PageHeader>
+        <div className="text-orange-400 font-normal text-2xl mt-2 text-center mb-10">
           Your friendly neighborhood code tinkerer and problem solver.
         </div>
       </div>
@@ -226,8 +227,8 @@ export default function Home() {
             Learning new technologies and methodologies is a passion of mine. I love facing challenges which enables me to grow and develop.
           </Card>
           <Card
-            title="Improving code"
-            icon={"fa-solid fa-snowplow"}>
+            title="Improving quality"
+            icon={"fa-solid fa-wand-magic-sparkles"}>
             Unlike many developers, I enjoy the process of debugging and refactoring. Thanks to my perfectionism, improving old code can feel just as rewarding as writing new code.
           </Card>
         </div>

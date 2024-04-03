@@ -26,7 +26,7 @@ export const companies = {
     linkedInUrl: "https://www.linkedin.com/school/technical-university-of-denmark/about/",
     iconUrl: process.env.PUBLIC_URL + "/logos/dtu.jpg",
     startDate: new Date(2015, 7, 1),
-    endDate: new Date(2017, 6, 1),
+    endDate: new Date(2017, 5, 1),
   },
   itu: {
     name: "IT University of Copenhagen",
@@ -38,7 +38,7 @@ export const companies = {
   hyf: {
     name: "HackYourFuture Denmark",
     linkedInUrl: "https://www.linkedin.com/school/hackyourfuture-denmark/about/",
-    iconUrl: null,
+    iconUrl: process.env.PUBLIC_URL + "/logos/hyf.png",
     startDate: new Date(2023, 10, 1),
     endDate: null,
   }
